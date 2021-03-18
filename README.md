@@ -11,6 +11,18 @@
     $ sudo apt update
 
     $ sudo apt install mariadb-server mariadb-client -y
+    
+# connexion à la base de données MariaDB
+
+    $ sudo mysql
+
+# une fois le mot de passe entré, copier le bloc ci dessous (reglages par défaut)
+
+    CREATE DATABASE wpdb;
+    CREATE USER 'wpuser'@'localhost' identified by 'dbpassword';
+    GRANT ALL PRIVILEGES ON wpdb.* TO 'wpuser'@'localhost';
+    FLUSH PRIVILEGES;
+    exit
                                          
 
 # update des packages
