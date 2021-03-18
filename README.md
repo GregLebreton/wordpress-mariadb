@@ -98,16 +98,14 @@
         127.0.0.1 www.monsite.com
   
 
-```
+# création du lien symbolique vers le dossier sites-enabled
 
     $ sudo ln -s /etc/nginx/sites-available/wordpress.conf /etc/nginx/sites-enabled/
+
+# On redémarre les services pour qu'ils tiennent compte des changements dans les configurations
 
     $ sudo systemctl restart nginx
 
     $ sudo systemctl restart php7.3-fpm
-
-    $ sudo mysql_secure_installation
     
-```
-
 # aller sur le navigateur de la machine virtuelle à l'adresse www.monsite.com
