@@ -94,12 +94,9 @@
 # on ajoute le nom de domaine dans le fichier host
 
     $ sudo nano /etc/hosts
-
-# ajouter www.monsite.com à la suite des autres noms de domaine
     
-    127.0.0.1 www.monsite.com
-   
-```
+        127.0.0.1 www.monsite.com
+  
 
 ```
 
@@ -110,5 +107,7 @@
     $ sudo systemctl restart php7.3-fpm
 
     $ sudo mysql_secure_installation
+    
+```
 
 # aller sur le navigateur de la machine virtuelle à l'adresse www.monsite.com
