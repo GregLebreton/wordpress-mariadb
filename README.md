@@ -109,7 +109,7 @@
 
     $ sudo ln -s /etc/nginx/sites-available/wordpress.conf /etc/nginx/sites-enabled/
 
-# On redémarre les services pour qu'ils tiennent compte des changements dans les configurations
+# on redémarre les services pour qu'ils tiennent compte des changements dans les configurations
 
     $ sudo systemctl restart nginx
 
