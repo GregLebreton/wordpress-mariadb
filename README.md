@@ -1,12 +1,23 @@
                                           ### wordpress-mariadb ###
-                                          
+ 
+# installation MariaDB
+
+    $ sudo apt-get install software-properties-common dirmngr
+    
+    $ sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+    
+    $ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://mariadb.mirrors.ovh.net/MariaDB/repo/10.5/debian buster main'
+    
+    $ sudo apt update
+
+    $ sudo apt install mariadb-server mariadb-client -y
                                          
 
 # update des packages
 
     $ sudo apt update && sudo apt upgrade
 
-# Téléchargement de l'archive Wordpress
+# téléchargement de l'archive Wordpress
 
     $ cd /var/www/html/
     
