@@ -6,22 +6,6 @@
 
     $ sudo apt update && sudo apt upgrade
 
-# installation des packages (nginx, mariadb, php)
-
-    $ sudo apt-get install nginx mariadb-server mariadb-client php-cgi php-common php-fpm php-pear php-mbstring php-zip php-net-socket php-gd php-xml-util php-gettext php-mysql php-bcmath unzip wget git -y
-
-# connexion à la base de données MariaDB
-
-    $ sudo mysql
-
-# une fois le mot de passe entré, copier le bloc ci dessous (reglages par défaut)
-
-    CREATE DATABASE wpdb;
-    CREATE USER 'wpuser'@'localhost' identified by 'dbpassword';
-    GRANT ALL PRIVILEGES ON wpdb.* TO 'wpuser'@'localhost';
-    FLUSH PRIVILEGES;
-    exit
-
 # Téléchargement de l'archive Wordpress
 
     $ cd /var/www/html/
