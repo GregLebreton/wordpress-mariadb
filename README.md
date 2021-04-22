@@ -28,6 +28,10 @@
 # update des packages
 
     $ sudo apt update && sudo apt upgrade
+    
+# installer les dépendances PHP 
+
+    $ sudo apt install php7.3-fpm php-mysql
 
 # téléchargement de l'archive Wordpress
 
